@@ -40,3 +40,6 @@ RUN apt-get install -y git
 # Add git commands to allow container updating
 ADD ./pull /usr/bin/pull
 RUN chmod 755 /usr/bin/pull
+
+# Setup Volume
+VOLUME ["/usr/share/swift"]
