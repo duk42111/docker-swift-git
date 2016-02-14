@@ -39,5 +39,4 @@ RUN apt-get install -y git
 
 # Add git commands to allow container updating
 ADD ./pull /usr/bin/pull
-ADD ./push /usr/bin/push
-RUN chmod 755 /usr/bin/pull && chmod 755 /usr/bin/push
+RUN chmod 755 /usr/bin/pull
