@@ -43,3 +43,10 @@ RUN chmod 755 /usr/bin/pull
 
 # Setup Volume
 VOLUME ["/usr/share/swift"]
+
+# Expose Ports
+EXPOSE 443
+EXPOSE 80
+
+# Execute start script
+CMD ["/bin/bash", "/start.sh"]
