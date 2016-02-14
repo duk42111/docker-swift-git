@@ -1,5 +1,5 @@
-# Docker: Swift + Blackfish
-A swift 2.2+ &amp; blackfish docker with git support for easy deployment
+# Docker: Swift + Git
+A swift 2.2+ &amp; docker with git support for easy deployment
 
 
 ## Mount local volume for Html files
