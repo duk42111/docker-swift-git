@@ -11,8 +11,9 @@ RUN apt-get update && apt-get upgrade -y
 
 # Install dependencies
 RUN apt-get install -y build-essential wget clang libedit-dev python2.7 python2.7-dev libicu52 rsync libxml2 git && \
+    apt-get autoremove -y && \
     apt-get clean && \
-    apt-get autoremove && \
+    apt-get autoclean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
     
 # Install swift    
@@ -32,3 +33,6 @@ ENV PATH /usr/bin:$PATH
 
 # Show Swift Version
 RUN swift --version
+
+# Install git
+RUN apt-get install -y git
